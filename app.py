@@ -58,7 +58,7 @@ if 'authenticated' not in st.session_state:
     st.session_state['authenticated'] = False
 
 def login_page():
-    st.markdown("<div style='text-align: center; margin-top: 5rem;'>", unsafe_with_html=True)
+    st.markdown("<div style='text-align: center; margin-top: 5rem;'>", unsafe_allow_html=True)
     # Affichage du Logo Design demandé
     st.markdown("""
         <div style="display: inline-block; padding: 20px; background: linear-gradient(135deg, #6366F1, #A855F7); border-radius: 24px; margin-bottom: 20px; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);">
@@ -85,7 +85,7 @@ def login_page():
 
 # Blocage si non authentifié
 if not st.session_state['authenticated']:
-    login_page()
+    def login_page()
     st.stop()
 
 # ==========================================
