@@ -49,7 +49,7 @@ st.markdown("""
         margin-bottom: 1rem;
     }
 </style>
-""", unsafe_with_html=True)
+""", unsafe_allow_html=True)
 
 # ==========================================
 # GESTION DE L'AUTHENTIFICATION (STRICTE)
@@ -66,7 +66,7 @@ def login_page():
         </div>
         <h2 style='font-weight: 700;'>Connexion Obligatoire</h2>
         <p style='color: #6B7280;'>Lycée d'Excellence Privé Nevers — Montpellier</p>
-    """, unsafe_with_html=True)
+    """, unsafe_allow_html=True)
     
     with st.container():
         col1, col2, col3 = st.columns([1, 2, 1])
