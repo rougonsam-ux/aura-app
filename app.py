@@ -85,7 +85,7 @@ def login_page():
 
 # Blocage si non authentifié
 if not st.session_state['authenticated']:
-     login_page()
+    login_page()
     st.stop()
 
 # ==========================================
